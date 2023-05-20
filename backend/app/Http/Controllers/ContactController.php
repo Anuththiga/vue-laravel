@@ -7,7 +7,7 @@ use App\Models\Contact;
 
 class ContactController extends Controller
 {
-    public function getContacts() {
+    public function index() {
         $contacts = Contact::all();
         return $contacts;
     }
